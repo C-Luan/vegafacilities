@@ -30,12 +30,12 @@ class ServicesSection extends StatelessWidget {
       color: const Color(0xFFFFFFFF),
       padding: EdgeInsets.symmetric(
         vertical: 60,
-        horizontal: isMobile ? 20 : 260,
+        horizontal: isMobile ? 20 : 400,
       ),
       child: Column(
         children: [
           const SectionTitle(title: 'Nossos Serviços'),
-          SizedBox(height: isMobile ? 18 : 30),
+          SizedBox(height: isMobile ? 30 : 60),
           GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),

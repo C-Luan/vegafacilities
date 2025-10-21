@@ -11,21 +11,28 @@ class EngineeringSection extends StatelessWidget {
     final isMobile = ResponsiveLayout.isMobile(context);
     return Container(
       color: const Color(0xFF0E3A42), // similar tone to mockup dark block
-      padding: EdgeInsets.symmetric(vertical: 60, horizontal: isMobile ? 20 : 80),
+      padding: EdgeInsets.symmetric(
+        vertical: 100,
+        horizontal: isMobile ? 20 : 80,
+      ),
       child: Column(
         children: [
-          const Icon(Icons.engineering, size: 48, color: Color(0xFF00B8D9)),
-          const SizedBox(height: 16),
-          const Text(
-            'SOLUÇÕES DE ENGENHARIA COM\nTÉCNICA, PLANEJAMENTO E RESULTADOS.',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xFF00B8D9),
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 0.6,
-            ),
+          Image.asset(
+            'assets/images/titulo_engenharia.png',
+            // width: double.infinity,
+            fit: BoxFit.cover,
+            height: isMobile ? 100 : 200,
           ),
+          // const Text(
+          //   'SOLUÇÕES DE ENGENHARIA COM\nTÉCNICA, PLANEJAMENTO E RESULTADOS.',
+          //   textAlign: TextAlign.center,
+          //   style: TextStyle(
+          //     color: Color(0xFF00B8D9),
+          //     fontSize: 26,
+          //     fontWeight: FontWeight.bold,
+          //     letterSpacing: 0.6,
+          //   ),
+          // ),
           const SizedBox(height: 18),
           const Text(
             'A Vega Facilities conta com uma equipe especializada em projetos elétricos, civis e de infraestrutura, garantindo segurança, eficiência e modernidade em cada projeto.',
@@ -42,17 +49,25 @@ class EngineeringSection extends StatelessWidget {
             ),
             child: Column(
               children: const [
-                ListItem(text: 'Elaboração e execução de projetos elétricos e civis'),
+                ListItem(
+                  text: 'Elaboração e execução de projetos elétricos e civis',
+                ),
                 ListItem(text: 'Fiscalização e gerenciamento de obras'),
                 ListItem(text: 'Planejamento e otimização de recursos'),
-                ListItem(text: 'Consultoria técnica para empreendimentos públicos e privados'),
+                ListItem(
+                  text:
+                      'Consultoria técnica para empreendimentos públicos e privados',
+                ),
               ],
             ),
           ),
           const SizedBox(height: 12),
           const Text(
             'Cada projeto é conduzido com foco em qualidade, sustentabilidade e resultados',
-            style: TextStyle(color: Color(0xFFFFFFFF), fontWeight: FontWeight.w700),
+            style: TextStyle(
+              color: Color(0xFFFFFFFF),
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ],
       ),

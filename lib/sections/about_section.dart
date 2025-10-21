@@ -11,7 +11,7 @@ class AboutSection extends StatelessWidget {
     final isMobile = ResponsiveLayout.isMobile(context);
     return Container(
       padding: EdgeInsets.symmetric(
-        vertical: 160,
+        vertical: 120,
         horizontal: isMobile ? 40 : 160,
       ),
       color: AppColors.lightBackground,

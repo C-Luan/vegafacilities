@@ -17,7 +17,7 @@ class ServiceCard extends StatelessWidget {
         // icon / image circle
         Container(
           // width: 142,
-          height: 200,
+          height: 150,
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),

@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:vegafacilities/sections/highlight_section.dart';
 import 'core/app_colors.dart';
 import 'sections/header_section.dart';
 import 'sections/hero_section.dart';
@@ -42,6 +43,7 @@ class VegaHomePage extends StatelessWidget {
                   SizedBox(height: 45), // Espaço para o header fixo
                   HeroSection(),
                   AboutSection(),
+                  HighlightSection(),
                   ServicesSection(),
                   GallerySection(),
                   EngineeringSection(),
@@ -53,12 +55,7 @@ class VegaHomePage extends StatelessWidget {
           ),
 
           /// Header fixo no topo
-          const Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: HeaderSection(),
-          ),
+          const Positioned(top: 0, left: 0, right: 0, child: HeaderSection()),
         ],
       ),
     );
