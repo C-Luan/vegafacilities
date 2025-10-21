@@ -16,8 +16,8 @@ class ServiceCard extends StatelessWidget {
       children: [
         // icon / image circle
         Container(
-          width: 90,
-          height: 90,
+          // width: 142,
+          height: 200,
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
@@ -26,19 +26,19 @@ class ServiceCard extends StatelessWidget {
           ),
           child: Image.asset(assetImage, fit: BoxFit.contain),
         ),
-        const SizedBox(height: 12),
-        SizedBox(
-          width: 140,
-          child: Text(
-            title,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w600,
-              color: AppColors.primary,
-            ),
-          ),
-        )
+        // const SizedBox(height: 12),
+        // SizedBox(
+        //   width: 140,
+        //   child: Text(
+        //     title,
+        //     textAlign: TextAlign.center,
+        //     style: const TextStyle(
+        //       fontSize: 14,
+        //       fontWeight: FontWeight.w600,
+        //       color: AppColors.primary,
+        //     ),
+        //   ),
+        // )
       ],
     );
   }

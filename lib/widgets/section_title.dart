@@ -14,18 +14,15 @@ class SectionTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-      decoration: BoxDecoration(
-        color: background,
-        borderRadius: BorderRadius.circular(30),
-      ),
-      child: Text(
-        title.toUpperCase(),
-        style: const TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
-          color: AppColors.primary,
-          letterSpacing: 0.6,
-        ),
+      // decoration: BoxDecoration(
+      //   color: background,
+      //   borderRadius: BorderRadius.circular(30),
+      // ),
+      child: Image.asset(
+        'assets/images/nossos_servicos.png',
+        // width: double.infinity,
+        fit: BoxFit.cover,
+        height: 40,
       ),
     );
   }

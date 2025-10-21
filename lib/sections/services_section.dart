@@ -13,19 +13,25 @@ class ServicesSection extends StatelessWidget {
     final spacing = isMobile ? 12.0 : 28.0;
 
     final services = [
-      {'t': 'Serviços de Engenharia e Projetos', 'i': 'assets/images/service1.png'},
+      {
+        't': 'Serviços de Engenharia e Projetos',
+        'i': 'assets/images/service1.png',
+      },
       {'t': 'Facilities', 'i': 'assets/images/service2.png'},
-      {'t': 'Manutenção Predial', 'i': 'assets/images/service3.png'},
-      {'t': 'Iluminação Pública', 'i': 'assets/images/service4.png'},
-      {'t': 'Coleta de Resíduos', 'i': 'assets/images/service5.png'},
+      {'t': 'Manutenção Predial', 'i': 'assets/images/service5.png'},
+      {'t': 'Iluminação Pública', 'i': 'assets/images/service7.png'},
+      {'t': 'Coleta de Resíduos', 'i': 'assets/images/service1.png'},
       {'t': 'Instalação e Manutenção', 'i': 'assets/images/service6.png'},
-      {'t': 'Combate a Incêndio', 'i': 'assets/images/service7.png'},
-      {'t': 'Locação de Mão de Obra', 'i': 'assets/images/service8.png'},
+      {'t': 'Combate a Incêndio', 'i': 'assets/images/service8.png'},
+      {'t': 'Locação de Mão de Obra', 'i': 'assets/images/service4.png'},
     ];
 
     return Container(
       color: const Color(0xFFFFFFFF),
-      padding: EdgeInsets.symmetric(vertical: 60, horizontal: isMobile ? 20 : 60),
+      padding: EdgeInsets.symmetric(
+        vertical: 60,
+        horizontal: isMobile ? 20 : 60,
+      ),
       child: Column(
         children: [
           const SectionTitle(title: 'Nossos Serviços'),
