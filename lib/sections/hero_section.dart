@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../core/app_colors.dart';
-import '../core/app_text_styles.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({super.key});
@@ -14,36 +12,30 @@ class HeroSection extends StatelessWidget {
           'assets/images/banner.png',
           width: double.infinity,
           fit: BoxFit.cover,
-          height: 600,
+          height: 800,
         ),
         Container(
           width: double.infinity,
-          height: 600,
+          height: 800,
           color: Colors.black.withOpacity(0.5),
         ),
-        const Positioned.fill(
+        Positioned.fill(
           child: Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text(
-                  'VEGA FACILITIES',
-                  style: TextStyle(
-                    fontSize: 48,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.textPrimary,
-                    letterSpacing: 2,
-                  ),
+                Image.asset(
+                  'assets/images/logo_branca.png',
+                  // width: double.infinity,
+                  fit: BoxFit.contain,
+
+                  height: 250,
                 ),
-                SizedBox(height: 10),
-                Text(
-                  'Excelência em Engenharia e Serviços Integrados',
-                  style: AppTextStyles.subtitle,
-                ),
+            
               ],
             ),
           ),
-        )
+        ),
       ],
     );
   }

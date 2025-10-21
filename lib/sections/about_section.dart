@@ -11,19 +11,16 @@ class AboutSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 40),
       color: AppColors.lightBackground,
       child: Row(
+        spacing: 40,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          
           Expanded(
-            flex: 1,
-            child: Image.asset('assets/images/about.png', height: 300),
-          ),
-          const SizedBox(width: 40),
-          const Expanded(
             flex: 2,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Quem Somos', style: AppTextStyles.sectionTitle),
+                Image.asset('assets/images/quem_somos.png', height: 40),
                 SizedBox(height: 20),
                 Text(
                   'A Vega Facilities atua há mais de 8 anos oferecendo excelência em serviços de engenharia elétrica, civil, iluminação pública, manutenção predial, limpeza e conservação, coleta de resíduos, segurança de portarias, apoio logístico e serviços gerais.',
@@ -31,6 +28,10 @@ class AboutSection extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Image.asset('assets/images/about.png', height: 300),
           ),
         ],
       ),

@@ -8,7 +8,7 @@ class HeaderSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-      color: AppColors.primary,
+      color: AppColors.lightBackground,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -49,7 +49,7 @@ class HeaderSection extends StatelessWidget {
         child: Text(
           title,
           style: const TextStyle(
-            color: AppColors.textPrimary,
+            color: AppColors.primary,
             fontSize: 16,
           ),
         ),
