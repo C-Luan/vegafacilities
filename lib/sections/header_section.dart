@@ -138,7 +138,7 @@ class _HeaderSectionState extends State<HeaderSection> {
   Widget _buttonColaborador() => Container(
         padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
         decoration: BoxDecoration(
-          color: AppColors.secondary,
+          color: AppColors.primary,
           borderRadius: BorderRadius.circular(6),
         ),
         child: const Text(

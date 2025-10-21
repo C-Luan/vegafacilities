@@ -33,10 +33,12 @@ class AboutSection extends StatelessWidget {
               ],
             ),
           ),
-          Expanded(
-            flex: 1,
-            child: Image.asset('assets/images/about.png', height: 500),
-          ),
+          isMobile
+              ? SizedBox()
+              : Expanded(
+                  flex: 1,
+                  child: Image.asset('assets/images/about.png', height: 500),
+                ),
         ],
       ),
     );

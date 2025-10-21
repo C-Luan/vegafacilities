@@ -17,6 +17,8 @@ dependencies:
   carousel_slider: ^5.1.1
   url_launcher: ^6.3.0
   flutter_svg: ^2.0.9
+  font_awesome_flutter: ^10.7.0
+  webviewx_plus: ^0.5.1+1
 dev_dependencies:
   flutter_test:
     sdk: flutter
