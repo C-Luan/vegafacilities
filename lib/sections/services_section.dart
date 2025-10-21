@@ -35,7 +35,7 @@ class ServicesSection extends StatelessWidget {
       child: Column(
         children: [
           const SectionTitle(title: 'Nossos Serviços'),
-          SizedBox(height: isMobile ? 30 : 60),
+          SizedBox(height: isMobile ? 30 : 120),
           GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
