@@ -49,6 +49,7 @@ class _GallerySectionState extends State<GallerySection> {
           ),
           const SizedBox(height: 30),
           CarouselSlider.builder(
+            key: const PageStorageKey('vega_carousel'),
             itemCount: images.length,
             itemBuilder: (context, index, realIndex) {
               final img = images[index];
@@ -64,6 +65,8 @@ class _GallerySectionState extends State<GallerySection> {
             options: CarouselOptions(
               height: isMobile ? 200 : 400,
               enlargeCenterPage: true,
+              pageSnapping: true,
+            
               autoPlay: true,
               autoPlayInterval: const Duration(seconds: 4),
               viewportFraction: isMobile ? 0.9 : 0.7,
