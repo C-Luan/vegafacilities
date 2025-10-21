@@ -30,7 +30,7 @@ class Footer extends StatelessWidget {
       color: AppColors.primary,
       padding: EdgeInsets.symmetric(
         vertical: isMobile ? 24 : 30,
-        horizontal: isMobile ? 20 : 40,
+        horizontal: isMobile ? 20 : 120,
       ),
       child: Column(
         crossAxisAlignment:

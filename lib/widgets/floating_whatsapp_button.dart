@@ -1,8 +1,9 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../core/app_colors.dart';
 
 class FloatingWhatsAppButton extends StatelessWidget {
   const FloatingWhatsAppButton({super.key});

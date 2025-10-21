@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import '../widgets/section_title.dart';
 import '../core/responsive_layout.dart';
 
 class EngineeringSection extends StatelessWidget {
@@ -37,28 +35,41 @@ class EngineeringSection extends StatelessWidget {
           const Text(
             'A Vega Facilities conta com uma equipe especializada em projetos elétricos, civis e de infraestrutura, garantindo segurança, eficiência e modernidade em cada projeto.',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Color(0xFFFFFFFF70), fontSize: 15),
+            // ignore: use_full_hex_values_for_flutter_colors
+            style: TextStyle(
+              color: Color.fromARGB(255, 252, 252, 252),
+              fontSize: 18,
+            ),
           ),
           const SizedBox(height: 22),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: const Color(0xFFFFFFFF),
-              borderRadius: BorderRadius.circular(6),
+          Padding(
+            padding: EdgeInsets.only(
+              left: isMobile ? 0 : 80,
+              right: isMobile ? 0 : 80,
             ),
-            child: Column(
-              children: const [
-                ListItem(
-                  text: 'Elaboração e execução de projetos elétricos e civis',
-                ),
-                ListItem(text: 'Fiscalização e gerenciamento de obras'),
-                ListItem(text: 'Planejamento e otimização de recursos'),
-                ListItem(
-                  text:
-                      'Consultoria técnica para empreendimentos públicos e privados',
-                ),
-              ],
+            child: Container(
+              width: double.infinity,
+              height: 260,
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: const Color(0xFFFFFFFF),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: Column(
+                spacing: 10,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  ListItem(
+                    text: 'Elaboração e execução de projetos elétricos e civis',
+                  ),
+                  ListItem(text: 'Fiscalização e gerenciamento de obras'),
+                  ListItem(text: 'Planejamento e otimização de recursos'),
+                  ListItem(
+                    text:
+                        'Consultoria técnica para empreendimentos públicos e privados',
+                  ),
+                ],
+              ),
             ),
           ),
           const SizedBox(height: 12),
@@ -66,7 +77,9 @@ class EngineeringSection extends StatelessWidget {
             'Cada projeto é conduzido com foco em qualidade, sustentabilidade e resultados',
             style: TextStyle(
               color: Color(0xFFFFFFFF),
-              fontWeight: FontWeight.w700,
+               fontSize: 16,
+               
+              // fontWeight: FontWeight.w700,
             ),
           ),
         ],

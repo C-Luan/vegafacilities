@@ -1,6 +1,4 @@
 import 'package:flutter/widgets.dart';
-import '../widgets/section_title.dart';
-import '../widgets/custom_button.dart';
 import '../widgets/footer.dart';
 import '../core/responsive_layout.dart';
 
@@ -16,7 +14,7 @@ class ContactSection extends StatelessWidget {
         Container(
           color: const Color(0xFFFFFFFF),
           padding: EdgeInsets.symmetric(
-            vertical: 50,
+            vertical: 120,
             horizontal: isMobile ? 16 : 80,
           ),
           child: Row(

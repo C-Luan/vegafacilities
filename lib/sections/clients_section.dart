@@ -25,17 +25,16 @@ class ClientsSection extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Text(
-            'EXPERIÊNCIA E CLIENTES',
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFF17343A),
-            ),
-          ),
+          Image.asset('assets/images/titulo_client.png',
+          height: 30,),
           const SizedBox(height: 16),
           const Text(
             'A VEGA Facilities orgulha-se de atender instituições de destaque.',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+              color: Color(0xFF333333),
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 120),
@@ -46,10 +45,10 @@ class ClientsSection extends StatelessWidget {
             spacing: 36,
             runSpacing: 24,
             children: logos.map((l) {
-              return _HoverLogo(imagePath: l, width: isMobile ? 90 : 140);
+              return _HoverLogo(imagePath: l, width: isMobile ? 150 : 200);
             }).toList(),
           ),
-             const SizedBox(height: 120),
+          const SizedBox(height: 120),
         ],
       ),
     );
@@ -76,7 +75,7 @@ class _HoverLogoState extends State<_HoverLogo> {
       onEnter: (_) => setState(() => _hovering = true),
       onExit: (_) => setState(() => _hovering = false),
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 400),
         child: ColorFiltered(
           colorFilter: _hovering
               ? const ColorFilter.mode(
