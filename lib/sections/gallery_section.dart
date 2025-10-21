@@ -24,7 +24,7 @@ class GallerySection extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(18),
-                child: Image.asset(img, fit: BoxFit.cover, height: isMobile ? 140 : 220),
+                child: Image.asset(img, fit: BoxFit.fill, height: isMobile ? 220: 360),
               ),
             ),
           );

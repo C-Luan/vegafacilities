@@ -12,12 +12,12 @@ class HeroSection extends StatelessWidget {
           'assets/images/banner.png',
           width: double.infinity,
           fit: BoxFit.cover,
-          height: 800,
+          height: 1000,
         ),
         Container(
           width: double.infinity,
-          height: 800,
-          color: Colors.black.withOpacity(0.5),
+          height: 1000,
+          color: Colors.black.withOpacity(0.2),
         ),
         Positioned.fill(
           child: Center(
@@ -31,7 +31,6 @@ class HeroSection extends StatelessWidget {
 
                   height: 250,
                 ),
-            
               ],
             ),
           ),

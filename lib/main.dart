@@ -32,19 +32,34 @@ class VegaHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.lightBackground,
-      child: SingleChildScrollView(
-        child: Column(
-          children: const [
-            HeaderSection(),
-            HeroSection(),
-            AboutSection(),
-            ServicesSection(),
-            GallerySection(),
-            EngineeringSection(),
-            ClientsSection(),
-            ContactSection(),
-          ],
-        ),
+      child: Stack(
+        children: [
+          /// Conteúdo rolável
+          Positioned.fill(
+            child: SingleChildScrollView(
+              child: Column(
+                children: const [
+                  SizedBox(height: 45), // Espaço para o header fixo
+                  HeroSection(),
+                  AboutSection(),
+                  ServicesSection(),
+                  GallerySection(),
+                  EngineeringSection(),
+                  ClientsSection(),
+                  ContactSection(),
+                ],
+              ),
+            ),
+          ),
+
+          /// Header fixo no topo
+          const Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: HeaderSection(),
+          ),
+        ],
       ),
     );
   }

@@ -30,7 +30,7 @@ class ServicesSection extends StatelessWidget {
       color: const Color(0xFFFFFFFF),
       padding: EdgeInsets.symmetric(
         vertical: 60,
-        horizontal: isMobile ? 20 : 60,
+        horizontal: isMobile ? 20 : 260,
       ),
       child: Column(
         children: [

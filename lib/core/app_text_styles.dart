@@ -28,4 +28,9 @@ class AppTextStyles {
     fontSize: 16,
     color: AppColors.textSecondary,
   );
+  static TextStyle bodyLarge = TextStyle(
+    fontFamily: GoogleFonts.metrophobic().fontFamily,
+    fontSize: 24,
+    color: AppColors.darkBackground,
+  );
 }
