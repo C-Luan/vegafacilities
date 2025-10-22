@@ -158,8 +158,5 @@ class HeaderSection extends StatelessWidget {
 
 **Carlos Luan**  
 Analista de Sistemas • Desenvolvedor Flutter & Web  
-📧 contato: [seu-email@exemplo.com](mailto:seu-email@exemplo.com)
+📧 contato: [carlos.luanrodrigues@outlook.com](mailto:carlos.luanrodrigues@outlook.com)
 
----
-
-© 2025 Vega Facilities. Todos os direitos reservados.
