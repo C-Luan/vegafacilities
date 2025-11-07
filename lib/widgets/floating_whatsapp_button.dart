@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FloatingWhatsAppButton extends StatelessWidget {
@@ -38,17 +39,7 @@ class FloatingWhatsAppButton extends StatelessWidget {
               ),
             ],
           ),
-          child: Center(
-            child: SvgPicture.asset(
-              'images/whatsapp.svg',
-              width: 34,
-              height: 34,
-              // colorFilter: const ColorFilter.mode(
-              //   Colors.white,
-              //   BlendMode.srcIn,
-              // ),
-            ),
-          ),
+          child: Center(child: Icon(FontAwesomeIcons.whatsapp,color: Colors.white,)),
         ),
       ),
     );
